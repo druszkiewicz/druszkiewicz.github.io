@@ -15,11 +15,148 @@ html {
 body {
    color: $black;
    background: $white;
+   font-family: Poppins;
+   font-style: normal;
+}
+
+.article {
+   margin: 8rem 8rem auto 8rem;
+   display:grid;
+   grid-column-gap: 1rem;
+   grid-template-columns: 2fr 1fr 1fr;
+   grid-template-areas: "head head head"
+                        "k11 k21 k31"
+                        "k12 k22 k32"
+                        "k13 k23 k33";
+   @media only screen and (max-width: 812px) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "head"
+      "k11"
+      "k12"
+      "k13";
+   }
+
+   &__header {
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      grid-area: head;
+      border-bottom: 1px black solid;
+      margin-bottom: 8rem;
+   }
+   &__board1 {
+      
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      grid-area: k11;
+   
+   }
+   &__board2 {
+      
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      grid-area: k12;
+      
+   }
+   &__board3 {
+      
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      grid-area: k13;
+      
+   }
+
+   &__linia1 {
+      width: 80px;
+      height: 4px;
+      left: 128px;
+      top: 1072px;
+
+      /* Secondary - Green */
+
+      background: #06C847;
+      border-radius: 8px;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+   }
+
+   &__linia2 {
+      width: 80px;
+      height: 4px;
+      left: 128px;
+      top: 1072px;
+
+      /* Secondary - Green */
+
+      background: #06C847;
+      border-radius: 8px;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+   }
+   &__linia3 {
+      width: 80px;
+      height: 4px;
+      left: 128px;
+      top: 1784px;
+
+      /* Secondary - Gold */
+
+      background: #2251CC;
+      border-radius: 8px;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      
+   }
+
+   &__content1 {
+      list-style: none;
+   }
+   &__content2 {
+      list-style: none;
+   }
+   &__content3 {
+      list-style: none;
+   }
+
+   &__li1 {
+      &::before {
+         content: ''; //musi  być nawet pusty
+         display: inline-block;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         background: green;
+         margin-right: 5px;
+      }
+   }
+
+   &__li2 {
+      &::before {
+         content: ''; //musi  być nawet pusty
+         display: inline-block;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         background: magenta;
+         margin-right: 5px;
+      }
+   }
+
+   &__li3 {
+      &::before {
+         content: ''; //musi  być nawet pusty
+         display: inline-block;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         background: blue;
+         margin-right: 5px;
+      }
+   }
+
 }
 
 .hero {
-   font-family: Poppins;
-   font-style: normal;
    margin: 8rem auto auto 8rem;
    display: flex;
    flex-direction: column;
