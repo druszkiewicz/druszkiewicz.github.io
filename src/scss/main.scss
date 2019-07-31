@@ -28,13 +28,13 @@ body {
                         "k11 k21 k31"
                         "k12 k22 k32"
                         "k13 k23 k33";
-   @media only screen and (max-width: 812px) {
-      grid-template-columns: 1fr;
-      grid-template-areas: "head"
-      "k11"
-      "k12"
-      "k13";
-   }
+   // @media only screen and (max-width: 812px) {
+   //    grid-template-columns: 1fr;
+   //    grid-template-areas: "head"
+   //    "k11"
+   //    "k12"
+   //    "k13";
+   // }
 
    &__header {
       font-weight: 600;
