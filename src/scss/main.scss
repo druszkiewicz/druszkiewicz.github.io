@@ -35,6 +35,11 @@ body {
    //    "k12"
    //    "k13";
    // }
+   @media only screen and (max-width: 812px) {
+      margin: 4rem 1rem;
+      align-items: center;
+   }
+   
 
    &__header {
       font-weight: 600;
