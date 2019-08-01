@@ -21,25 +21,36 @@ body {
 
 .article {
    margin: 8rem 8rem auto 8rem;
-   display:grid;
+   display: grid;
    grid-column-gap: 1rem;
-   grid-template-columns: 2fr 1fr 1fr;
+   grid-template-columns: 1.5fr 1fr 1fr;
    grid-template-areas: "head head head"
-                        "k11 k21 k31"
-                        "k12 k22 k32"
-                        "k13 k23 k33";
-   // @media only screen and (max-width: 812px) {
-   //    grid-template-columns: 1fr;
-   //    grid-template-areas: "head"
-   //    "k11"
-   //    "k12"
-   //    "k13";
-   // }
+      "k11 k21 k31"
+      "k12 k22 k32"
+      "k13 k23 k33";
+
+
    @media only screen and (max-width: 812px) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "head"
+         "k11"
+         "k12"
+         "k13"
+         "k14"
+         "k15"
+         "k16"
+         "k17"
+         "k18"
+         "k19"
+      ;
+      // }
+
+      // @media only screen and (max-width: 812px) {
       margin: 4rem 1rem;
       align-items: center;
    }
-   
+
+
 
    &__header {
       font-weight: 600;
@@ -48,30 +59,103 @@ body {
       grid-area: head;
       border-bottom: 1px black solid;
       margin-bottom: 8rem;
+
+      @media only screen and (max-width: 812px) {
+         margin-bottom: 1rem;
+      }
    }
+
    &__board1 {
-      
+
       font-weight: 600;
       font-size: 1.5rem;
       line-height: 2rem;
       grid-area: k11;
-   
+
+      &--1 {
+         grid-area: k21;
+
+         @media only screen and (max-width: 812px) {
+            grid-area: k12;
+            margin-bottom: 0;
+         }
+      }
+
+      &--2 {
+         grid-area: k31;
+
+         @media only screen and (max-width: 812px) {
+            grid-area: k13;
+            margin-top: 0;
+         }
+      }
+
    }
+
    &__board2 {
-      
+
       font-weight: 600;
       font-size: 1.5rem;
       line-height: 2rem;
       grid-area: k12;
-      
+
+      @media only screen and (max-width: 812px) {
+         grid-area: k14;
+         margin-bottom: 0;
+         margin-top: 2rem;
+      }
+
+      &--1 {
+         grid-area: k22;
+
+         @media only screen and (max-width: 812px) {
+            grid-area: k15;
+            margin-bottom: 0;
+         }
+      }
+
+      &--2 {
+         grid-area: k32;
+
+         @media only screen and (max-width: 812px) {
+            grid-area: k16;
+            margin-top: 0;
+         }
+      }
+
    }
+
    &__board3 {
-      
+
       font-weight: 600;
       font-size: 1.5rem;
       line-height: 2rem;
       grid-area: k13;
-      
+
+      @media only screen and (max-width: 812px) {
+         grid-area: k17;
+         margin-bottom: 0;
+         margin-top: 2rem;
+      }
+
+      &--1 {
+         grid-area: k23;
+
+         @media only screen and (max-width: 812px) {
+            grid-area: k18;
+            margin-bottom: 0;
+         }
+      }
+
+      &--2 {
+         grid-area: k33;
+
+         @media only screen and (max-width: 812px) {
+            grid-area: k19;
+            margin-top: 0;
+         }
+      }
+
    }
 
    &__linia1 {
@@ -95,10 +179,12 @@ body {
 
       /* Secondary - Green */
 
-      background: #06C847;
+      background: #653CAD;
+      ;
       border-radius: 8px;
       transform: matrix(1, 0, 0, -1, 0, 0);
    }
+
    &__linia3 {
       width: 80px;
       height: 4px;
@@ -110,51 +196,48 @@ body {
       background: #2251CC;
       border-radius: 8px;
       transform: matrix(1, 0, 0, -1, 0, 0);
-      
+
    }
 
-   &__content1 {
-      list-style: none;
-   }
-   &__content2 {
-      list-style: none;
-   }
-   &__content3 {
-      list-style: none;
-   }
 
    &__li1 {
+      list-style: none;
+
       &::before {
          content: ''; //musi  być nawet pusty
          display: inline-block;
          width: 8px;
          height: 8px;
          border-radius: 50%;
-         background: green;
+         background: #06C847;
          margin-right: 5px;
       }
    }
 
    &__li2 {
+      list-style: none;
+
       &::before {
          content: ''; //musi  być nawet pusty
          display: inline-block;
          width: 8px;
          height: 8px;
          border-radius: 50%;
-         background: magenta;
+         background: #653CAD;
          margin-right: 5px;
       }
    }
 
    &__li3 {
+      list-style: none;
+
       &::before {
          content: ''; //musi  być nawet pusty
          display: inline-block;
          width: 8px;
          height: 8px;
          border-radius: 50%;
-         background: blue;
+         background: #2251CC;
          margin-right: 5px;
       }
    }
