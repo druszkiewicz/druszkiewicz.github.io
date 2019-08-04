@@ -315,3 +315,62 @@ body {
 
 
 }
+
+.proj {
+   margin: 1rem 8rem auto 8rem;
+   padding: 2rem 0 0 0;
+   // display: flex;
+   // flex-direction: column;
+   background: #F5F7FA;
+
+   &__head {
+      margin-top: 50px;
+   }
+
+   &__desc {
+      max-width: 25rem;
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 2.25rem;
+
+      @media only screen and (max-width: 812px) {
+         font-size: 0.75rem;
+         line-height: 1.25rem;
+      }
+   }
+
+   &__item {
+      background: white;
+      margin-top: 32px;
+      display: grid;
+      grid-template-rows: 200px 1fr;
+      &-header {
+         padding-left: 16px;
+      }
+      &-links {
+         background: #F5F7FA;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+}
+
+.code {
+   width: 50px;
+   text-decoration: none;
+}
+.demo {
+   width: 50px;
+   text-decoration: none;
+}
+
+.button {
+   width:20px;
+}
+
+.proj__container {
+   display:grid;
+   grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+   grid-gap:100px 50px;
+}
