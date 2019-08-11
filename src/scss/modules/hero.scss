@@ -1,6 +1,6 @@
 .hero {
-  max-width: 1184px;
-  padding: 112px 0 184px;
+  max-width: 1216px;
+  padding: 112px 16px 184px;
   margin: 0 auto;
   &__description {
     color: $gray;
@@ -12,9 +12,11 @@
     margin-bottom: 3.75rem;
   }
   &__image {
-    width:120px;
-    height:120px;
+    width:128px;
+    height:128px;
     border-radius: 100%;
+    padding: 6px;
+    border: 8px solid $gray;
   }
   &__link {
     color: $blue;
