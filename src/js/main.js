@@ -1,7 +1,7 @@
 "use strict";
 
 console.log(`I've checked the code and `);
-console.log(`it's no error but`);
+console.log(`there is no error but`);
 console.log(`---------------------------`);
 console.log(`nice that you are here...`);
 
