@@ -1,5 +1,18 @@
-![Darke persolal website](src/assets/img/cover.pmg)
+![Darek's persolal website](src/assets/img/cover.png)
 
+# Darek's persolal website
+
+My persolal website build during WTF course 👍
+
+# Tools and technologies I've used
+
+- Visual Studio Code
+- SASS
+- Nod JS
+- GULP
+- Figma
+- CSS grid, flexbox, Fetch API
+- PWA
 
 # biuld with wtf-gulp-starter
 
