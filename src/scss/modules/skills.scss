@@ -9,19 +9,29 @@
     font-weight: 600;
     padding: 1rem 0;
     border-bottom: 2px solid #E5E8EC;
+    @media (max-width: $mobile){
+      text-align: center;
+    }
   }
 }
 
 .skills-list {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   column-gap: 0.5rem;
    padding: 8rem 0 0;
+   @media (max-width: $mobile){
+    grid-template-columns: 1fr;
+    padding: 5rem 0 0;
+  }
 
    &__item {
       color: $gray;
       padding: 11px 0 11px 30px;
       position: relative;
-
+      @media (max-width: $mobile) {
+        padding-left: 20px;
+      }
       &::before {
          top: 10px;
          left: 0;
@@ -33,11 +43,17 @@
          background: url('../assets/img/check-green.svg');
 
          .skills-list--violet & {
-            background: url('../assets/img/check-violet.svg');
+            background-image: url('../assets/img/check-violet.svg');
          }
 
          .skills-list--blue & {
-            background: url('../assets/img/check-blue.svg');
+            background-image: url('../assets/img/check-blue.svg');
+         }
+         @media (max-width: $mobile) {
+           width: 12px;
+           height: 12px;
+           background-size: contain;
+           top: 11px;
          }
       }
    }
@@ -45,7 +61,8 @@
 
    &__list {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      // * zmiana il colum na mobilce grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       list-style-type: none;
       padding: 0;
       margin-top: calc(1.5rem + 4px);
@@ -57,7 +74,6 @@
       font-size: 2rem;
       line-height: 2.75rem;
       margin: 0;
-
       &::before {
          content: '';
          width: 80px;
