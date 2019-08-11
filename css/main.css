@@ -592,6 +592,8 @@ template {
     margin-left: 1.5rem; }
   .social__link {
     text-decoration: none; }
+  .social__icon--linkedin {
+    background: white; }
 
 html {
   -webkit-box-sizing: border-box;
