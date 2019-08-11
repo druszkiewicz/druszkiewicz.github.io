@@ -1,4 +1,7 @@
-# wtf-gulp-starter
+![Darke persolal website](src/assets/img/cover.pmg)
+
+
+# biuld with wtf-gulp-starter
 
 `npm install -g gulp-cli`
 
