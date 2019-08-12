@@ -1,0 +1,17 @@
++ i - powiększanie zmniejszanie
+space + myszka - przesuwanie
+Z+Alt+click - oddalenie
+Z+click - przyblienie
+zaznaczenie - powiększenie
+Cmd + click - dostęp do warstwy we frame
+Cmd + / - search
+*** Cmd zaznacz warstwę, Cmd / - upercase....
+A lub F - przejście do narzędzia frame
+R - prostokąt
+L - linia
+O - elipsa
+*** Cmd / - default - ustawia default dla np. prostokąta
+Cmd Alt X - default
+Cmd Alt C - copy style
+Cmd Alt V - wkleja style (np. do prostokąta)
+Schift + click lubz z Cmd po warstwach - doznacza kolejne warstwy
