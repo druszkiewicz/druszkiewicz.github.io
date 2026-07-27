@@ -19,7 +19,7 @@
    },
    "homepage": "https://github.com/maciejkorsan/wtf-gulp-starter#readme",
    "devDependencies": {
-      "@babel/cli": "^7.4.4",
+      "@babel/cli": "^7.29.7",
       "@babel/core": "^7.4.4",
       "@babel/polyfill": "^7.4.4",
       "@babel/preset-env": "^7.4.4",
@@ -28,7 +28,7 @@
       "babel-loader": "^8.0.6",
       "browser-sync": "^3.0.2",
       "gh-pages": "^2.0.1",
-      "gulp": "^4.0.1",
+      "gulp": "^5.0.1",
       "gulp-autoprefixer": "^9.0.0",
       "gulp-babel": "^8.0.0",
       "gulp-notify": "^4.0.0",
